@@ -32,6 +32,8 @@ class Game
   def get_winner
     winner = @players.select {|player| player.lives > 0}.first
     puts "Player #{winner.number} wins with a score of #{winner.score}"
+    puts "----- GAME OVER -----"
+    puts "Good bye!"
   end
 
   def play
@@ -53,28 +55,3 @@ class Game
   end
 
 end
-
-
-
-
-
-    
-    
-
-
-
-=begin
- 
-create a game class
-have constructor for Player1, Player 2, and 
-def next_round variable
-def display_player_scores
-def alive_player
-  def get_winner
-    def game_over
-      def play
-        
-
-output
-
-=end
